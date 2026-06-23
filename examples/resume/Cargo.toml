@@ -1,0 +1,14 @@
+[package]
+name = "resume"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+ratatui = { workspace = true, features = ["crossterm"] }
+tui-widgets = { version = "0.7", default-features = false, features = ["big-text"] }
+ratatypst-core.workspace = true
+wasm-minimal-protocol.workspace = true
